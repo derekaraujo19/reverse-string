@@ -2,14 +2,15 @@ function reverseString(str) {
   // create empty string reversed
   let reversed = "";
 
-  for (let i = str.length - 1; i > -1; i--) {
-    reversed = reversed + str[i];
+  // iterate over string
+  for (let i = 0; i < str.length; i++) {
+    // for each char, set rev to char + empty string
+    reversed = str[i] + reversed
   }
+  // return rev
   return reversed;
 
-  // iterate backwards over string
-    // set reversed to reversed + current val
-  // return reversed
+
 }
 
 if (require.main === module) {
